@@ -3,8 +3,8 @@ import { gql } from "apollo-server-express";
 export const typeDefs = gql`
   type User {
     id:ID
-    firstName: String!
-    lastName: String!
+    firstname: String!
+    lastname: String!
     email: String!
     password: String!,
     contactNumber:String!,
@@ -16,8 +16,8 @@ export const typeDefs = gql`
 
 
   input CreateUser {
-    firstName: String!
-    lastName: String!
+    firstname: String!
+    lastname: String!
     email: String!
     password: String!,
     repassword:String!,

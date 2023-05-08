@@ -8,7 +8,6 @@ import { Mutation } from './graph/mutation.js'
 import cors from 'cors'
 import { Passport } from 'passport'
 import { jwtStrategyMiddleware } from './middlewares/jwt.middlware.js'
-import mailService from './services/mail.service.js'
 dotEnv.config()
 const app = express()
 app.use(cors())

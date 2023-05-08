@@ -3,8 +3,8 @@ import {randomUUID} from 'crypto'
 const userSchema = new Schema({
   id: {type:'UUID',default:()=>randomUUID()},
   username: String,
-  firstName: String,
-  lastName: String,
+  firstname: String,
+  lastname: String,
   email: String,
   password: String
 })
